@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Journey Log</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Journey Log</h1>
+        <p class="subtitle">訪れた証、ひと塗りで</p>
+        
+        <div class="stats">
+            <div class="stat-box">
+                <span class="stat-number" id="visitedCount">0</span>
+                <span class="stat-label">制覇済み</span>
+            </div>
+            <div class="stat-box">
+                <span class="stat-number" id="remainingCount">47</span>
+                <span class="stat-label">未制覇</span>
+            </div>
+            <div class="stat-box">
+                <span class="stat-number" id="progressPercent">0%</span>
+                <span class="stat-label">制覇率</span>
+            </div>
+        </div>
+
+        <div class="progress-bar">
+            <div class="progress-fill" id="progressFill"></div>
+        </div>
+
+        <div class="message success" id="completionMessage">
+            🎉 おめでとうございます！日本全国制覇達成です！🎉
+        </div>
+
+        <div class="map-container">
+            <div id="map"></div>
+        </div>
+
+        <div class="controls">
+            <button class="btn" onclick="resetAll()">リセット</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
